@@ -3,12 +3,20 @@ import java.util.*;
 public class NumberToString{
  public static void main(String[] args){
    Scanner scan = new Scanner(System.in);
-   System.out.print("Digite un Numero, y lo vamos a decir como es en ingles: ");
    boolean validarRespuesta = false;
    String num;
+   int number = 0;
+
    while (!validarRespuesta){
+      System.out.println("Digite un Numero, y lo vamos a decir como es en ingles: ");
       if (scan.hasNextInt()){
-        num = printNum(
+        number = scan.nextInt();
+        num = printNum(number);
+        validarRespuesta = true;
+        if (number > 10 || number < 1)
+          System.out.println("Lo siento, todavia contamos de 1 a 10!");
+        else
+          System.out.println("El numero " + number + " en ingles es: " + num);
       }else
         System.out.println("Formato invalido, hay que ser un numero entre 1 y 10"); 
    }
