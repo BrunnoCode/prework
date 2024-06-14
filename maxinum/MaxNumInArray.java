@@ -46,7 +46,7 @@ public class MaxNumInArray{
         maxNum = arrayNum[i];
       }
     }
-    System.out.println("El array esta compuesto por: ");
+    System.out.print("El array esta compuesto por: ");
     for (int i = 0; i < size; i++){
       System.out.print("["+arrayNum[i]+"] ");
     }
