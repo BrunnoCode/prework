@@ -4,7 +4,6 @@ public class OddEven{
  public static void main(String[] args){
    System.out.print("Introduzca un numero: ");
    Scanner scan = new Scanner(System.in);
-   boolean check = false;
    int num = Integer.parseInt(scan.nextLine());
    isOddEven(num);
    scan.close();
